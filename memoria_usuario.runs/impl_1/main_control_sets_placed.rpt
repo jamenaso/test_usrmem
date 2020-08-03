@@ -1,0 +1,105 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Aug  2 13:23:50 2020
+| Host         : DESKTOP-CLO8L8L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    27 |
+|    Minimum number of control sets                        |    27 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    93 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    27 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |    15 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |              69 |           21 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              41 |           11 |
+| Yes          | No                    | Yes                    |             121 |           34 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+--------------------------+------------------+----------------+--------------+
+|  Clock Signal  |            Enable Signal            |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------+--------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | Inst_usrmem/ce_sig                  | Inst_usrmem/rst          |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/oe_sig_i_1_n_0          | Inst_usrmem/rst          |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/rom_wrp_sig0            |                          |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/we_sig_i_1_n_0          | Inst_usrmem/rst          |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                     |                          |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG | Inst_uart/RxBitCnt                  | Inst_uart/txBusy_i_2_n_0 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/cnt_time                | Inst_usrmem/rst          |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/state_word[3]_i_1_n_0   | Inst_usrmem/rst          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[11]_i_1_n_0            |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[3]_i_1_n_0             |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[15]_i_1_n_0            |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[7]_i_1_n_0             |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[19]_i_1_n_0            |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_wr_data_sig[15]_i_1_n_0         |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_addr_sig[23]_i_1_n_0            |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_wr_data_sig[7]_i_1_n_0          |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_wr_data_sig[11]_i_1_n_0         |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | rom_wr_data_sig[3]_i_1_n_0          |                          |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | Inst_uart/Tx                        | Inst_uart/txBusy_i_2_n_0 |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | Inst_uart/dout                      | Inst_uart/txBusy_i_2_n_0 |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG | byte_sig[7]_i_1_n_0                 | Inst_usrmem/rst          |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG |                                     | Inst_usrmem/rst          |                6 |             15 |         2.50 |
+|  clk_IBUF_BUFG | Inst_usrmem/data_word[15]_i_1_n_0   | Inst_usrmem/rst          |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/qout_sig[15]_i_1_n_0    | Inst_usrmem/rst          |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/addr_word[23]_i_1_n_0   | Inst_usrmem/rst          |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG | Inst_usrmem/state_return[3]_i_1_n_0 | Inst_usrmem/rst          |                8 |             29 |         3.63 |
+|  clk_IBUF_BUFG |                                     | Inst_uart/txBusy_i_2_n_0 |               15 |             54 |         3.60 |
++----------------+-------------------------------------+--------------------------+------------------+----------------+--------------+
+
+

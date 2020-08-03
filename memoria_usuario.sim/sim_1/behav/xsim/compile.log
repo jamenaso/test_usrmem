@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jamen/Dropbox/JAIRO MENA/Working/UBA/CSE/Trabajo Final de Carrera/pruebas_unitarias_TFC/memoria_usuario/memoria_usuario.srcs/sources_1/new/main.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jamen/Dropbox/JAIRO MENA/Working/UBA/CSE/Trabajo Final de Carrera/pruebas_unitarias_TFC/memoria_usuario/memoria_usuario.srcs/sources_1/new/uart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jamen/Dropbox/JAIRO MENA/Working/UBA/CSE/Trabajo Final de Carrera/pruebas_unitarias_TFC/memoria_usuario/memoria_usuario.srcs/sources_1/new/usrmem.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'usrmem'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/jamen/Dropbox/JAIRO MENA/Working/UBA/CSE/Trabajo Final de Carrera/pruebas_unitarias_TFC/memoria_usuario/memoria_usuario.srcs/sources_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'
